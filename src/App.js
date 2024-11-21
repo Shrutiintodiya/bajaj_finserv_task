@@ -16,7 +16,7 @@ function App() {
         try {
             // Parse the JSON input and send it to the backend
             const parsedInput = JSON.parse(jsonInput);
-            const res = await axios.post("http://localhost:5000/bfhl", parsedInput); // Update URL for deployment
+            const res = await axios.post("https://bajaj-finserv-backend-flnp.onrender.com/bfhl", parsedInput); // Update URL for deployment
             setResponse(res.data);
         } catch (error) {
             alert("Invalid JSON or server error");
